@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">Trainig Work</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link fs-14" href="jquery.html">jQuery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="owl.html">Owl</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="slick.html">Slick</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="datepicker.html">Datepicker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="#">Scroller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="#">Lazy Loading</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="#">Range Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="#">Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="api.html">Api</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- hide & show -->
+      <section class="py-4">
+        <div class="container">
+          <h4>Hide & Show</h4>
+          <div class="normalDiv">
+            <div class="childDiv bg-warning p-4">
+              <h5>hello i am hide & show div</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo soluta modi aliquid, perferendis
+                odit
+                temporibus a labore hic earum?</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aliquam assumenda non quo pariatur
+                ab enim laudantium labore voluptatum itaque?</p>
+            </div>
+          </div>
+          <div class="controller mt-3">
+            <button class="btn btn-primary hide-btn">Hide Button</button>
+            <button class="btn btn-primary show-btn">Show Button</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- fadding effefts -->
+      <section class="py-4 bg">
+        <div class="container">
+          <h4>Fadding Effefts</h4>
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-3">
+              <button class="btn btn-primary fade-btn mb-3">Fade In</button>
+              <div class="fade-box">
+                <div class="box1 box bg-dark"></div>
+                <div class="box2 box bg-info"></div>
+                <div class="box3 box bg-success"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <button class="btn btn-primary fade-out mb-3">Fade Out</button>
+              <div class="fade-box fade-out-box">
+                <div class="box4 box bg-dark"></div>
+                <div class="box5 box bg-info"></div>
+                <div class="box6 box bg-success"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <button class="btn btn-primary fade-toggle mb-3">Click Toggle</button>
+              <div class="fade-box">
+                <div class="box7 box bg-dark" id="box1"></div>
+                <div class="box8 box bg-info" id="box2"></div>
+                <div class="box9 box bg-success" id="box3"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <button class="btn btn-primary fade-to mb-3">Fade To</button>
+              <div class="fade-box fade-out-box">
+                <div class="box10 box bg-dark" id="box1"></div>
+                <div class="box11 box bg-info" id="box2"></div>
+                <div class="box12 box bg-success" id="box3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- slide effects -->
+      <section class="py-4">
+        <div class="container">
+          <h4>Sliding Effets</h4>
+          <div class="mb-3">
+            <div class="slide-main slide-main-1">Click me show panel</div>
+            <div class="slide-panel slide-panel-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus
+              modi iure
+              illum
+              fugiat tempora dolore
+              consequatur at odit voluptas accusamus omnis corrupti eveniet, officia exercitationem itaque fugit,
+              laboriosam
+              dolores?</div>
+          </div>
+          <div class="mb-3">
+            <div class="slide-main slide-main-2">Click me show panel</div>
+            <div class="slide-panel slide-panel-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus
+              modi iure
+              illum
+              fugiat tempora dolore
+              consequatur at odit voluptas accusamus omnis corrupti eveniet, officia exercitationem itaque fugit,
+              laboriosam
+              dolores?</div>
+          </div>
+          <div class="mb-3">
+            <div class="slide-main slide-main-3">Click me show panel</div>
+            <div class="slide-panel slide-panel-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus
+              modi iure
+              illum
+              fugiat tempora dolore
+              consequatur at odit voluptas accusamus omnis corrupti eveniet, officia exercitationem itaque fugit,
+              laboriosam
+              dolores?</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- addclass, removeclass, toggleclass -->
+      <section class="py-4 bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-xl-4">
+              <h4>Add class</h4>
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam?</p>
+              <small>Lorem ipsum dolor sit amet.</small>
+              <pre>Lorem ipsum dolor sit amet consectetur.</pre>
+              <button class="btn btn-info btn-sm" id="addClass">Add class</button>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4">
+              <h4 class="red">Remove class</h4>
+              <h2 class="red">Lorem, ipsum dolor.</h2>
+              <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam?</p>
+              <small class="red">Lorem ipsum dolor sit amet.</small>
+              <pre class="red">Lorem ipsum dolor sit amet consectetur.</pre>
+              <button class="btn btn-info btn-sm" id="removeClass">Remove class</button>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4">
+              <h4>Toggle class</h4>
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam?</p>
+              <small>Lorem ipsum dolor sit amet.</small>
+              <pre>Lorem ipsum dolor sit amet consectetur.</pre>
+              <button class="btn btn-info btn-sm" id="toggleClass">Toggle class</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- width / height -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 mb-3">
+              <h4>Width/Height</h4>
+              <div id="div1"></div>
+              <button class="btn btn-sm btn-success mt-3 dimension-btn1">Dimension of div</button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 mb-3">
+              <h4>innerWidth/innerHeight</h4>
+              <div id="div2"></div>
+              <button class="btn btn-sm btn-success mt-3 dimension-btn2">Dimension of div</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <h4>outerWidth/outerHeight</h4>
+              <div id="div3"></div>
+              <button class="btn btn-sm btn-success mt-3 dimension-btn3">Dimension of div</button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <h4>outerWidth/outerHeight with margin</h4>
+              <div id="div4"></div>
+              <button class="btn btn-sm btn-success mt-3 dimension-btn4">Dimension of div</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- filter -->
+      <section class="py-4">
+        <div class="container">
+          <h4>jQuery Filter</h4>
+          <div class="form-group position-relative filter-box">
+            <input type="text" class="form-control search" placeholder="Search Here...">
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Profile</th>
+              </tr>
+            </thead>
+            <tbody class="tableData">
+              <tr>
+                <td>Sanket</td>
+                <td>25</td>
+                <td>Mumbai</td>
+                <td>Front End Developer</td>
+              </tr>
+              <tr>
+                <td>Raj</td>
+                <td>30</td>
+                <td>Delhi</td>
+                <td>Software Developer</td>
+              </tr>
+              <tr>
+                <td>Reena</td>
+                <td>23</td>
+                <td>Mumbai</td>
+                <td>Software Engineer</td>
+              </tr>
+              <tr>
+                <td>Akshay</td>
+                <td>26</td>
+                <td>Jaipur</td>
+                <td>Backend End Developer</td>
+              </tr>
+              <tr>
+                <td>Lokesh</td>
+                <td>55</td>
+                <td>Rajastan</td>
+                <td>COO</td>
+              </tr>
+              <tr>
+                <td>Pooja</td>
+                <td>27</td>
+                <td>Delhi</td>
+                <td>Ui/Ux Designer</td>
+              </tr>
+              <tr>
+                <td>Bhushan</td>
+                <td>40</td>
+                <td>Kolkata</td>
+                <td>Front End Developer</td>
+              </tr>
+              <tr>
+                <td>Rahul</td>
+                <td>25</td>
+                <td>Mumbai</td>
+                <td>Full Stack Developer</td>
+              </tr>
+              <tr>
+                <td>Chitra</td>
+                <td>25</td>
+                <td>Bangalore</td>
+                <td>Data Scientist</td>
+              </tr>
+              <tr>
+                <td>Sushil</td>
+                <td>40</td>
+                <td>Mumbai</td>
+                <td>Founder</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- demo -->
+      <section>
+        <div class="container">
+          <h4>Currency Demo</h4>
+          <div class="form-group w-50 mx-auto">
+            <input type="text" class="form-control indianDemo" placeholder="Enter your amount">
+          </div>
+        </div>
+      </section>
+
+      <!-- animated search -->
+      <section class="searchSection">
+        <div class="container">
+          <h4 class="text-white">Search</h4>
+          <div class="d-flex justify-content-center align-items-center">
+            <form action="#!" class="position-relative w-50">
+              <input type="text" class="form-control searchInput" placeholder="Search Here...">
+              <button class="btn searchBtn" type="submit"></button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="py-4 mt-4 bg-secondary">
+      <div class="container">
+        <div class="text-center">
+          <span class="text-light fs-14">&copy; <span class="text-warning">2020- 21 jQuery Work</span> | All Right
+            Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/owl/js/owl.carousel.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/mCustomScrollbar/mCustomScrollbar.min.js"></script>
+    <script src="vendor/lazy-loading/jquery.lazyload.min.js"></script>
+    <script src="vendor/rangeSlider/rangeslider.min.js"></script>
+    <script src="vendor/chart/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+  <script>
+    $(function () {
+      $('.searchInput').hide();
+      $('.searchBtn').click(function () {
+        $(this).siblings('.searchInput').toggle();
+        $(this).toggleClass('cancle');
+      });
+
+      $(document).mouseup(function (e) {
+        let container = $('.searchInput');
+        if (!container.is(e.target) || container.has(e.target) === 1) {
+          $('.searchInput').hide();
+        }
+      });
+    })
+  </script>
+
+
+</html>

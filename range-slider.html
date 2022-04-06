@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/rangeSlider/rangeslider.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">Trainig Work</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="jquery.html">jQuery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="owl.html">Owl</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="slick.html">Slick</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="datepicker.html">Datepicker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="scroller.html">Scroller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="lazy-loading.html">Lazy Loading</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fs-14" href="range-slider.html">Range Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="chart.html">Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="api.html">Api</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <section class="py-4">
+        <div class="container">
+          <h4>Rangeslider</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <h6 class="font-weight-bold pb-2">Price: <span class="price text-info font-weight-lighter"></span></h6>
+                <input type="range" class="w-50 rangeSlider" min="50" max="1000" value="500" step="10">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <span class="d-block pb-1 text-warning">html: <span class="font-italic html text-secondary value"></span></span>
+              <input type="range" class="htmlInput w-100 inputVal" min="1" max="10" value="1">
+            </div>
+            <div class="col-md-4">
+              <span class="d-block pb-1 text-warning font-italic">css: <span class="font-italic css text-secondary value"></span></span>
+              <input type="range" class="cssInput w-100 inputVal" min="1" max="10" value="1">
+            </div>
+            <div class="col-md-4">
+              <span class="d-block pb-1 text-warning font-italic">javascript: <span class="font-italic js value text-secondary"></span></span>
+              <input type="range" class="jsInput w-100 inputVal" min="1" max="10" value="1">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="py-4 mt-4 bg-secondary">
+      <div class="container">
+        <div class="text-center">
+          <span class="text-light fs-14">&copy; <span class="text-warning">2020- 21 jQuery Work</span> | All Right
+            Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/owl/js/owl.carousel.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/mCustomScrollbar/mCustomScrollbar.min.js"></script>
+    <script src="vendor/lazy-loading/jquery.lazyload.min.js"></script>
+    <script src="vendor/rangeSlider/rangeslider.min.js"></script>
+    <script src="vendor/chart/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

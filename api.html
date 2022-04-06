@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">Trainig Work</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="jquery.html">jQuery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="owl.html">Owl</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="slick.html">Slick</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="datepicker.html">Datepicker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="scroller.html">Scroller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="lazy-loading.html">Lazy Loading</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="range-slider.html">Range Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-14" href="chart.html">Chart</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fs-14" href="api.html">Api</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <div class="container">
+        <ul class="apidata d-flex justify-content-between flex-wrap py-4"></ul>
+      </div>
+    </main>
+    <!-- main end  -->
+
+    <!-- footer start -->
+    <footer class="py-4 mt-4 bg-secondary">
+      <div class="container">
+        <div class="text-center">
+          <span class="text-light fs-14">&copy; <span class="text-warning">2020- 21 jQuery Work</span> | All Right
+            Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+      // https://api.github.com/users/timmywheels/repos
+
+      $(document).ready(function () {
+        const api = `https://api.github.com/users/timmywheels/repos`;
+        const ulNode = $('.apidata');
+        $.get(api, function (data, status) {
+          if (status === "success") {
+            for (let item of data) {
+              addData(item);
+            }
+          } else {
+            let errorMsg = 'Opps, Connection Loss. Kindly Try After Some Time';
+            $(ulNode).append($('<h1></h1>').html(errorMsg));
+          }
+        });
+
+        function addData(apiItems) {
+          let liNode = $('<li class="mb-3 apili"></li>');
+          liNode.append($('<span class="d-block"></span>').html(apiItems.id));
+          liNode.append($('<h5></h5>').html(apiItems.name));
+          liNode.append($('<p></p>').html(apiItems.description));
+          ulNode.append(liNode);
+        }
+
+      })
+
+    </script>
+  </body>
+
+</html>
